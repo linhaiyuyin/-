@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/first-psgr/first",
+    "pages/start/start",
+    "pages/wifi_station/tianqi/tianqi",
+    "pages/introduction/introduction",
+    "pages/info/info",
+    "pages/Distance/Distance",
+    "pages/formalAPI/formalAPI"
+  ],
+  "window": {
+    "backgroundTextStyle": "yellow",
+    "navigationBarBackgroundColor": "green",
+    "navigationBarTitleText": "搭载式综合探测器",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "debug": true
+}

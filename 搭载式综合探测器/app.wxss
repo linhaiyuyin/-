@@ -1,0 +1,55 @@
+/**app.wxss**/
+page{
+  height: 100%;
+}
+
+.menu-item{  
+  width: 32%;  
+  float: left;  
+  text-align: center;  
+  padding-top: 8px;  
+  color:aqua;
+}  
+.menu-item1{  
+  width: 24%;  
+  float: left;  
+  text-align: center;  
+  padding-top: 8px;  
+  color:aqua;
+}  
+.img{ 
+  width: 23px;  
+  height: 23px;  
+  display: block;  
+  margin:auto;  
+}  
+.clear{  
+  clear: both;  
+}  
+.tab-bar{  
+  position: fixed;  
+  width: 100%;  
+  padding: 0px 2%;  
+}  
+ 
+.button{
+  margin: 130px;
+}
+
+page1 {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.page-body {
+  padding: 20rpx 0;
+}
+
+.page-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}

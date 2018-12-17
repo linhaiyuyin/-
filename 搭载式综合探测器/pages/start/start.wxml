@@ -1,0 +1,30 @@
+<!--start.wxml-->
+<text id="headline">欢迎使用综合探测器！</text>
+
+<button id="btn0" bindtap="getDataFromOneNet">
+检测周围环境(光照温度)</button>
+
+<button id="btn1" bindtap="getDataFromOneNet1">
+检测前方障碍（障碍距离）</button>
+
+<button id="btn2"  bindtap="introduction">本程序使用简介</button>
+
+<button id="btn3"  bindtap="info">后台猴子</button>
+<button class="btn4" bindtap="back">
+返回首页</button>
+<view class="page-body">
+  <view class="page-body-wrapper">
+      <cover-view class="image-cnt">
+        <cover-image class="cover-image" bindtap="tap1" src="../images/AI.jpg" />
+      </cover-view>
+    
+  </view>
+</view>
+<view class="page-body">
+  <view class="page-body-wrapper">
+      <cover-view class="image-cnt">
+        <cover-image class="cover-image" bindtap="tap1" src="../images/int.jpg" />
+      </cover-view>
+    
+  </view>
+</view>

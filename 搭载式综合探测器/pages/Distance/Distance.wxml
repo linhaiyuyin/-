@@ -1,0 +1,14 @@
+<!--pages/Distance/Distance.wxml-->
+
+
+<canvas class = "canvas" id="chart1"
+canvas-id="distance"></canvas>
+<text id="headline">欢迎使用前方障碍监测系统！</text>
+<view class="page-body">
+  <view class="page-body-wrapper">
+      <cover-view class="image-cnt">
+        <cover-image class="cover-image" bindtap="tap1" src="../images/AI.jpg" />
+      </cover-view>
+    
+  </view>
+</view>

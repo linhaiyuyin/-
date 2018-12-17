@@ -1,0 +1,44 @@
+/* pages/formalAPI/formalAPI.wxss */
+
+#btn4{
+  height: 88rpx;
+  top: bottom;
+  width: 60%;
+  color: white;
+  background-color: #110520;
+  }
+#headline{
+  color: #0f0bf5;
+  font-family:PingFangSC-Regular;
+  font-size:40px;
+  top:5%;
+  left:25%;
+  right:25%;
+  position: absolute
+  }
+  #text1{
+  color: #0f0bf5;
+  font-family:PingFangSC-Regular;
+  font-size:40px;
+  top:25%;
+  left:25%;
+  right:25%;
+  position: absolute
+  }#text2{
+  color: #0f0bf5;
+  font-family:PingFangSC-Regular;
+  font-size:40px;
+  top:45%;
+  left:25%;
+  right:25%;
+  position: absolute
+  }
+
+  .page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+
+.page-body-button {
+  margin-bottom: 30rpx;
+}

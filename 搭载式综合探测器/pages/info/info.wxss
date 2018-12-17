@@ -1,0 +1,10 @@
+/* pages/info/info.wxss */
+#text{
+  color: #0f0bf5;
+  font-family:PingFangSC-Regular;
+  font-size:18px;
+  top: 60%;
+  left: 17%;
+  right:17%;
+  position: absolute
+  }

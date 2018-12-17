@@ -1,0 +1,15 @@
+<!--pages/info/info.wxml-->
+<text id="text">Welcome to use this app
+Here we are going to help you know more about the researchers of this app
+we are still learning in Beijing and welcome to present any piece of advice to us
+
+contect us:
+mail:1589913968@qq.com</text>
+<view class="page-body">
+  <view class="page-body-wrapper">
+      <cover-view class="image-cnt">
+        <cover-image class="cover-image" bindtap="tap1" src="../images/info.jpg" />
+      </cover-view>
+    
+  </view>
+</view>

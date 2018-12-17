@@ -1,0 +1,26 @@
+<!--pages/introduction/introduction.wxml-->
+<text id="headline1">欢迎使用本程序简介</text>
+
+<text id="text">本程序功能有：
+1.检测传感器前方开阔度（调用距离数据api）
+2.检测传感器周围的温度，湿度，光强（调用天气信息api）
+3.检测传感器周围是否有火，雨等危险(待上线)
+4.当前的位置（调用地图api）</text>
+<view class="page-body">
+  <view class="page-body-wrapper">
+      <cover-view class="image-cnt">
+        <cover-image class="cover-image" bindtap="tap1" src="../images/intr.jpg" />
+      </cover-view>
+    
+  </view>
+</view>
+
+<text id="chain" >火花空间上的链接
+https://www.oursparkspace.cn/?yada_wiki=1542082086
+</text>
+
+
+
+
+
+

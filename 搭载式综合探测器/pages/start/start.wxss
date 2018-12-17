@@ -1,0 +1,73 @@
+/* start.wxss */
+
+#btn0{
+  height: 70rpx;
+  top: 33%;
+  width: 60%;
+  color: white;
+  background-color: #2008f5;
+
+  }
+
+#btn1{
+  height: 70rpx;
+  top: 48%;
+  width: 60%;
+  color: white;
+  background-color: #8a08f5;
+}
+
+#btn2{
+  height: 70rpx;
+  top: 55%;
+  width: 60%;
+  color: white;
+  background-color: #f55308;
+  }
+
+#btn3{
+  height: 70rpx;
+  top: 65%;
+  width: 60%;
+  color: white;
+  background-color: #08f5ce;
+  }
+
+#input{
+  background-color: #e5e5e5;
+  width: 60%;
+  height: 88rpx;
+  top: 55%;
+  left: 18%;
+  position: absolute
+  }
+
+#text{
+  color: #0f0bf5;
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+  top: 45%;
+  left: 17%;
+  position: absolute
+  }
+
+
+
+
+
+#headline{
+  color: #0f0bf5;
+  font-family:PingFangSC-Regular;
+  font-size:40px;
+  top:5%;
+  left:25%;
+  right:25%;
+  position: absolute
+  }
+  #btn4{
+  height: 88rpx;
+  top: top;
+  width: 60%;
+  color: white;
+  background-color: #110520;
+  }

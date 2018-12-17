@@ -1,0 +1,12 @@
+/* pages/index/index.wxss */
+.image-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cover-image {
+  width: 750rpx;
+  height: 750rpx;
+}
