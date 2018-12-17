@@ -12,17 +12,17 @@ String apiKey="5Mwc7R5tBULd3JWiBA43tw=u5Ko=";//与你的设备绑定的APIKey
 #include <Wire.h>                                  //调用库  
 #include <ESP8266.h>
 
-#define Trig1 9
-#define Echo1 8
+#define Trig1 9//这是超声波传感器的trig引脚，是发声端，而且要使用pwm接口
+#define Echo1 8//这是回声端
 
 
-#define IDLE_TIMEOUT_MS  3000 
+#define IDLE_TIMEOUT_MS  3000 //这是定义好准备存储距离数据的字符数组
 char buf[10];
 
 #define INTERVAL_sensor 2000
 unsigned long sensorlastTime = millis();
                                                                                                                       
-float distance,pix2,temp1;
+float distance,pix2,temp1;//这是定义的三个用来计算距离的指标
 
 #define INTERVAL_OLED 1000
 
@@ -33,7 +33,7 @@ char  distance_c[7],pix2_c[7];
 #include <SoftwareSerial.h>
 #define EspSerial mySerial
 #define UARTSPEED  9600
-SoftwareSerial mySerial(2, 3); /* RX:D3, TX:D2 */
+SoftwareSerial mySerial(2, 3); /* RX:D3, TX:D2 *///这是esp8266-12引脚
 ESP8266 wifi(&EspSerial);
 //ESP8266 wifi(Serial1);                                      //定义一个ESP8266（wifi）的对象
 unsigned long net_time1 = millis();                          //数据上传服务器时间
@@ -41,7 +41,7 @@ unsigned long sensor_time = millis();
 
 String postString;   
 
-void setup(void)     //初始化函数  
+void setup(void)     //初始化函数  //以下是esp8266联网代码
 {       
   //初始化串口波特率  
     Wire.begin();
@@ -108,7 +108,7 @@ void loop(void)     //循环函数
 }
 
 void getSensorData(){  
-    
+    //将triga引脚定时激活关闭，计算时间差
     digitalWrite(Trig1,LOW);
     delayMicroseconds(2);
     digitalWrite(Trig1,HIGH);
@@ -123,14 +123,14 @@ void getSensorData(){
     delay(100);
     dtostrf(distance, 2, 1, distance_c);
  
-    dtostrf(pix2, 2, 1, pix2_c);
+    dtostrf(pix2, 2, 1, pix2_c);//将计算好的距离转换成字符数组，提高传输精度
 }
 
 void updateSensorData() {
   if (wifi.createTCP(HOST_NAME, HOST_PORT)) { //建立TCP连接，如果失败，不能发送该数据
     Serial.print("create tcp ok\r\n");
 
-    jsonToSend="{\"distance\":";
+    jsonToSend="{\"distance\":";//发送距离
     dtostrf(distance, 1, 2, buf);
     jsonToSend+="\""+String(buf)+"\"";
     jsonToSend+=",\"pix2\":";
